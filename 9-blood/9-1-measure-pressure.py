@@ -154,7 +154,8 @@ try:
     time.sleep(10)
     plt.close()
 
-    np.savetxt('5-adc-measure/calibration_6.txt', measure, fmt='%d')
+    np.savetxt('5-adc-measure/DATA.txt', measure, fmt='%d')
+    np.savetxt('5-adc-measure/TIME.txt', timeline, fmt='%d')
 
 ################################################################################
 # "Finally block" with functions that must be execute after script any way
