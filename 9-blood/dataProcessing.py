@@ -43,6 +43,7 @@ plt.ylabel('Давление, Барр')
 new = np.convolve(data, np.ones((N,))/N, mode = 'valid')
 
 plt.plot(new) 
+plt.plot(data) 
 plt.scatter(tSP, SP, color = 'blue', marker='o')
 plt.scatter(tDP, DP, color = 'blue', marker='o')
 plt.show()
